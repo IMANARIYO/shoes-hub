@@ -28,16 +28,13 @@ class _PromoBannerCarouselState extends State<PromoBannerCarousel> {
     super.initState();
 
     final now = DateTime.now();
-    banners =
-        promoBanners
-            .where(
-              (b) =>
-                  b.active &&
-                  (b.startDate == null || !now.isBefore(b.startDate!)) &&
-                  (b.endDate == null || !now.isAfter(b.endDate!)),
-            )
-            .toList()
-          ..sort((a, b) => a.position.compareTo(b.position));
+    banners = promoBanners
+        .where((PromoBanner b) =>
+            b.active &&
+            (b.startDate == null || !now.isBefore(b.startDate!)) &&
+            (b.endDate == null || !now.isAfter(b.endDate!)))
+        .toList()
+      ..sort((PromoBanner a, PromoBanner b) => a.position.compareTo(b.position));
 
     _pageController = PageController(
       initialPage: _currentIndex,

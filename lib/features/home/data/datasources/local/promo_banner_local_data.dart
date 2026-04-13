@@ -1,4 +1,4 @@
-import '../models/promo_banner_model.dart';
+import '../../models/promo_banner_model.dart';
 
 final List<PromoBanner> promoBanners = [
   PromoBanner(id: '1', title: 'Flash Sale', subtitle: 'Up to 60% off today only', imageUrl: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800&h=400&fit=crop', targetType: 'COLLECTION', targetValue: 'flash-sale', position: 1, active: true, startDate: DateTime(2026, 1, 20), endDate: DateTime(2026, 1, 21)),

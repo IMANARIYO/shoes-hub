@@ -1,4 +1,4 @@
-import '../models/product_variant_model.dart';
+import '../../models/product_variant_model.dart';
 
 final List<Map<String, dynamic>> _rawVariants = [
   {

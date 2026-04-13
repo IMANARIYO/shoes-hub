@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:shoes_hub_mobile_app/data/models/product/material_model.dart';
+import '../../data/models/material_model.dart';
 
 class MaterialsScreen extends StatelessWidget {
   final List<MaterialModel> materials;

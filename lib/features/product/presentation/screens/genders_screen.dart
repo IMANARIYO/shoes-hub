@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../../../../data/models/product/gender_model.dart';
+import '../../data/models/gender_model.dart';
 
 class GendersScreen extends StatelessWidget {
   final List<Gender> genders;
