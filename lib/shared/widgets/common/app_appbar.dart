@@ -36,7 +36,7 @@ class AppAppBar extends StatelessWidget implements PreferredSizeWidget {
           ? Row(
               mainAxisSize: MainAxisSize.min,
               children: [
-                const Icon(Icons.storefront, color: AppColors.accent, size: 26),
+                const Icon(Icons.storefront, color: AppColors.accent, size: 26), // 10%
                 const SizedBox(width: AppSpacing.xs),
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,

@@ -65,20 +65,20 @@ class AppTextStyles {
 
   // ── Buttons ────────────────────────────────────────────
   static final TextStyle buttonPrimary = AppTypography.button.copyWith(
-    color: AppColors.textOnDark,
+    color: AppColors.textOnDark,   // on accent (10%) or primary (30%) bg
   );
 
   static final TextStyle buttonSecondary = AppTypography.button.copyWith(
-    color: AppColors.primary,
+    color: AppColors.primary,      // 30% — outline / ghost buttons
   );
 
-  // ── Price ──────────────────────────────────────────────
+  // ── Price → 10% accent (draws the eye, limited use) ───
   static final TextStyle price = AppTypography.price.copyWith(
-    color: AppColors.accent,
+    color: AppColors.accent,       // 10%
   );
 
   static final TextStyle priceStrikethrough = AppTypography.bodyMedium.copyWith(
-    color: AppColors.textHint,
+    color: AppColors.textHint,     // 60% neutral
     decoration: TextDecoration.lineThrough,
   );
 
